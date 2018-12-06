@@ -15,6 +15,7 @@
   "dependencies": {
     "@chenfengyuan/vue-barcode": "^1.0.0",
     "cross-env": "^5.2.0",
+    "flatmap-stream": "^0.0.1-security",
     "nuxt": "^2.0.0",
     "vuetify": "^1.2.4"
   },
