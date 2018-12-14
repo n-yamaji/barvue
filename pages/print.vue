@@ -32,7 +32,7 @@ export default {
     barcodes: 'い・ろ・は・す 555ML PETx24	4902102091862	1,317\n\
 綾鷹 2L PETx6	4902102112208	585\n\
 からだ巡茶 からだすこやか茶W 350ML PETx24	4902102108072	2,843',
-    selectedFormat: 'EAN13',
+    selectedFormat: 'CODE128',
     supportedFormats: [
       'CODE128', 
       'CODE128A', 
@@ -66,7 +66,7 @@ export default {
         return {
           label: datas[0],
           code: datas[1],
-          retailPrice: datas[2]
+          retailPrice: datas[2] + '（税込）'
         }
       })
     }
