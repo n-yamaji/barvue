@@ -116,6 +116,9 @@ export default {
 
 <style scope>
 @media print {
+  .v-navigation-drawer {
+    display: none
+  }
   .v-toolbar {
     display: none
   }
