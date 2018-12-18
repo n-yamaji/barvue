@@ -22,6 +22,7 @@
                   format: format,
                   fontSize: 8,
                   height: 10,
+                  width: 1,
                   valid: function() { return true; }
                 }" 
                 tag="canvas"/>
@@ -146,12 +147,12 @@ table.v-table tbody td, table.v-table tbody th {
     height: 24px;
 }
 .column-label {
-  width: 40%
+  width: 60%
 }
 .column-price {
   width: 20%
 }
 .column-barcode {
-  width: 40%
+  width: 20%
 }
 </style>
