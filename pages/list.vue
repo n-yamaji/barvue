@@ -49,14 +49,12 @@
 
 <script>
 import VueBarcode from '@chenfengyuan/vue-barcode';
-import printer from "vue-printer";
 import BarcodeList from '~/components/BarcodeList.vue'
 
 export default {
   components: {
     'barcode': VueBarcode,
-    BarcodeList,
-    printer
+    BarcodeList
   },
   data: () => ({
     barcodes: 'い・ろ・は・す 555ML PETx24	4902102091862	1,317\n\
