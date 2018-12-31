@@ -15,5 +15,8 @@ module.exports = {
     'vue'
   ],
   // add your custom rules here
-  rules: {}
+  rules: {
+    // eslint-plugin-vue overrides
+    "vue/attribute-hyphenation": ["warn", "always", { "ignore": ["on"] }],
+  }
 }
