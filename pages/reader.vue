@@ -1,5 +1,6 @@
 <template>
   <div>
+    <v-text-field :value="barcode"/>
     <quagga-scanner 
       :onDetected="logIt" 
       :readerSize="readerSize" 
@@ -21,12 +22,15 @@ export default {
         width: 640,
         height: 480
       },
-      detecteds: []
+      detecteds: [],
+      barcode: ''
     }
   },
   methods: {
     logIt (data) {
-      console.log('detected', data)
+      let barcode = data.codeResult.code;
+      console.log('detected', barcode);
+      this.barcode = barcode;
     }
   }
 }
