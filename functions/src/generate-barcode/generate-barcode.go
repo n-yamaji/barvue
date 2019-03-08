@@ -42,6 +42,8 @@ func handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyRespo
 		}, nil
 	}
 
+	log.Printf("imageBytes: %+v\n", imageBytes)
+
 	return events.APIGatewayProxyResponse{
 		StatusCode:      200,
 		Body:            base64.StdEncoding.EncodeToString(imageBytes),
