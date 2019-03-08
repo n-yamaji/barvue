@@ -21,7 +21,8 @@ func handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyRespo
 	codeType := request.QueryStringParameters["codeType"]
 	value := request.QueryStringParameters["value"]
 
-	log.Println(request)
+	log.Printf("%+v\n", request)
+	log.Printf("%+v\n", request.QueryStringParameters)
 
 	var imageBytes []byte
 	if codeType == "ean" {
