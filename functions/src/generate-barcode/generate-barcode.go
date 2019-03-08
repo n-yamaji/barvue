@@ -24,6 +24,9 @@ func handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyRespo
 	log.Printf("%+v\n", request)
 	log.Printf("%+v\n", request.QueryStringParameters)
 
+	log.Printf("codeType: %+v\n", codeType)
+	log.Printf("value: %+v\n", value)
+
 	var imageBytes []byte
 	if codeType == "ean" {
 		imageBytes = generateEan(value)
