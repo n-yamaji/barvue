@@ -69,7 +69,7 @@ func generateEan(code string) []byte {
 	png.Encode(file, eanCode)
 
 	bytes, _ := ioutil.ReadAll(file)
-	return bytes
+	return ([]byte)(bytes)
 }
 
 func generateCode128(content string) []byte {
