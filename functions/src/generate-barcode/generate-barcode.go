@@ -4,6 +4,7 @@ import (
 	"encoding/base64"
 	"image/png"
 	"io/ioutil"
+	"log"
 	"os"
 
 	"github.com/aws/aws-lambda-go/events"
@@ -19,6 +20,8 @@ func handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyRespo
 
 	codeType := request.QueryStringParameters["codeType"]
 	value := request.QueryStringParameters["value"]
+
+	log.Println(request)
 
 	var imageBytes []byte
 	if codeType == "ean" {
