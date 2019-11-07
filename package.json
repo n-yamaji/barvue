@@ -13,15 +13,16 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "vue": "^2.5.21",
-    "vue-server-renderer": "^2.5.21",
-    "vue-template-compiler": "^2.5.21",
     "@chenfengyuan/vue-barcode": "^1.0.0",
+    "@nuxtjs/google-tag-manager": "^2.3.1",
     "cross-env": "^5.2.0",
     "event-stream": "^4.0.1",
     "flatmap-stream": "^0.0.1-security",
     "nuxt": "^2.0.0",
+    "vue": "^2.5.21",
     "vue-quaggajs": "^1.0.6",
+    "vue-server-renderer": "^2.5.21",
+    "vue-template-compiler": "^2.5.21",
     "vuetify": "^1.2.4"
   },
   "devDependencies": {

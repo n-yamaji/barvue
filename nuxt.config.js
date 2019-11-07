@@ -44,6 +44,7 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+    ['@nuxtjs/google-tag-manager', { id: 'GTM-KDVRXP7', pageTracking: true }],
   ],
 
   /*
